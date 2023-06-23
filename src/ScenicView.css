@@ -1,0 +1,30 @@
+.scenic-view {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(to bottom, #87ceeb 0%, #bce2f7 100%);
+  overflow: hidden;
+}
+
+.deer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  background: url("./deer.png") no-repeat center;
+  background-size: contain;
+  animation: deerAnimation 5s infinite linear;
+}
+
+@keyframes deerAnimation {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
